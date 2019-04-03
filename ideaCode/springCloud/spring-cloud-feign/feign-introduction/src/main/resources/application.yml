@@ -1,0 +1,17 @@
+server:
+  port: 8010
+spring:
+  application:
+    name: feign-introduction
+logging:
+  level:
+    lb.study.feignintroduction.client.HelloFeignClient: debug
+
+feign:
+  client:
+    config:
+      github-client: #需要配置的feignName default为所有的
+        connectTimeout: 15000 #链接超时时间
+        readTimeout: 15000 #读取超时时间设置
+        loggerLevel: full #配置feign的日志级别
+

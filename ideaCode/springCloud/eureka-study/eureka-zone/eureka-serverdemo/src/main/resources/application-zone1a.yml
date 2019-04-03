@@ -1,0 +1,22 @@
+server:
+  port: 8761
+spring:
+  application:
+    name: eureka-server
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true # 启用ip配置 这样在注册中心列表中看见的是以ip+端口呈现的
+    metadata-map.zone: zone1
+  client:
+    register-with-eureka: true #是否注册到eureka-server上
+    fetch-registry: true #表示是否从Eureka Server上获取注册信息，默认为true
+    region: region-east
+    service-url:
+      zone1: http://localhost:8761/eureka/ ,http://localhost:8762/eureka/
+      zone2: http://localhost:8763/eureka/,http://localhost:8764/eureka/
+    availability-zones: #分别在一个区域里，用region: region-east 配置，然后这个区域有两个空间分别是zone1和zone2
+      region-east: zone1,zone2
+  server:
+    wait-time-in-ms-when-sync-empty: 0
+    enable-self-preservation: false #是否开启自我保护模式

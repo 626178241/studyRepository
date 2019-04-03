@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: hystrix-cache
+server:
+  port: 7073

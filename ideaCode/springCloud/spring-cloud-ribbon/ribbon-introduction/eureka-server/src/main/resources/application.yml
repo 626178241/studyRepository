@@ -1,0 +1,18 @@
+server:
+  port: 8761
+spring:
+  application:
+    name: ribbon-eureka-server
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true # 启用ip配置 这样在注册中心列表中看见的是以ip+端口呈现的
+  client:
+    register-with-eureka: false #是否将该应用注册到eureka server上
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+ribbon:
+  eager-load: #饥饿加载模式（Ribbon进行客户端负载均衡的Client并不是在服务启动的时候就初始化好的，而是在调用的时候才会去创建相应的Client）
+    enabled: true
+    clients: test-client

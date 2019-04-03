@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="lb.study.cache.demo1.dao.StudentMapper">
+
+    <select id="queryStudentById" parameterType="long" resultType="java.util.Map">
+        select stu_id as stuId,stu_age as stuAge,stu_name as stuName,stu_class as stuClass from tb_student
+        <where>
+            1=1
+        </where>
+        <if test="stuId!=null">
+            and stu_id = #{stuId}
+        </if>
+    </select>
+
+    <select id="findStudentById" parameterType="long" resultType="lb.study.cache.demo1.entity.Student">
+        select stu_id as stuId,stu_age as stuAge,stu_name as stuName,stu_class as stuClass from tb_student
+        <where>
+            1=1
+        </where>
+        <if test="stuId!=null">
+            and stu_id = #{stuId}
+        </if>
+    </select>
+
+    <update id="updateStudentById" parameterType="lb.study.cache.demo1.entity.Student">
+        update tb_student set stu_age=#{stu.stuAge},stu_name=#{stu.stuName},stu_class=#{stu.stuClass} where stu_id=#{stu.stuId}
+    </update>
+
+    <update id="updateStudent" parameterType="long">
+        update tb_student set stu_age=20 where stu_id=#{stuId}
+    </update>
+</mapper>

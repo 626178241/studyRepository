@@ -1,0 +1,16 @@
+server:
+  port: 8761
+
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true # 启用ip配置 这样在注册中心列表中看见的是以ip+端口呈现的
+  client:
+    registerWithEureka: false #是否将该应用注册到eureka server上
+    fetchRegistry: false #
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+  server:
+      waitTimeInMsWhenSyncEmpty: 0
+      enableSelfPreservation: false #是否开启自我保护模式

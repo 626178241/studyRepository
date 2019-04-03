@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: hystrixFeign-consumer
+
+server:
+  port: 8082
+
+feign:
+  hystrix:
+    enabled: true # Hystrix\u529F\u80FD\u8001\u7248\u672C\u9ED8\u8BA4true\uFF0C\u65B0\u7248\u672C\u9ED8\u8BA4false
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 5000

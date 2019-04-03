@@ -1,0 +1,8 @@
+server:
+  port: 7073
+turbine:
+  app-config: hello-service,feign-producer
+  cluster-name-expression: "'default'"
+spring:
+  application:
+    name: hystrix-turbine

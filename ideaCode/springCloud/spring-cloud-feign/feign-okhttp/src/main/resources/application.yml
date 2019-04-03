@@ -1,0 +1,5 @@
+feign: #这是配置方式替换client
+  httpclient:
+    enabled: false
+  okhttp:
+    enabled: true

@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: feign-file-server
+  servlet:
+    multipart:
+      max-file-size: 100MB #单个文件最大限制
+      max-request-size: 100MB #单次请求最大限制
+      s
+
+server:
+  port: 8012

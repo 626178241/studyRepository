@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: schedule-introduction
+
+server:
+  port: 9090
