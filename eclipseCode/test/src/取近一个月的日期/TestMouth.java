@@ -28,7 +28,7 @@ public class TestMouth {
 		String str=  new SimpleDateFormat("yyyy-MM-dd").format(day);
 		System.out.println(str);
 	}
-	
+
 	@Test
 	public static void test3() {
 		Map map = new HashMap<>();
