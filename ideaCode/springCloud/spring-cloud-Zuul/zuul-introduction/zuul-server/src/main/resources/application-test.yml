@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: zuul-server
+server:
+  port: 5555
+zuul:
+  routes:
+    client-a:
+      path: /client/**
+      serviceId: client-a
+      #url: forward:/client #跳转本地接口（优先serviceId哦）
+
+#---------其他路由写法
+#zuul:
+#  routes:
+#    client-a: /client/**
+
+#zuul:
+#  routes:
+#    client-a:
+#以上相当于
+#zuul:
+#  routes:
+#    client-a:
+#      path: /client/**
+#      url: http:localhost:7070 #client-a的地址

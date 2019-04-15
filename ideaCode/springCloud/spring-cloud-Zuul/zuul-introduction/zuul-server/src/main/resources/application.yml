@@ -1,10 +1,4 @@
 spring:
-  application:
-    name: zuul-server
-server:
-  port: 5555
-zuul:
-  routes:
-    client-a:
-      path: /client/**
-      serviceId: client-a
+  profiles:
+    active: ribbon
+

@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: zuul-server
+server:
+  port: 5555
+
+#---------其他路由写法
+zuul:
+  routes:
+    client-a: /client/**
+
+client-a:
+  ribbon:
+    NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
+    listOfServers: http://localhost:7070,http://localhost:7071 #ribbon脱离eureka的使用，这里指定源服务列表
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule #声明策略模式为随机
+  eager-load:
+      clients:
+      enabled: #使用配置的方式对特定的源服务进行策略约束【规则：clientName.ribbon.*】
+ribbon:
+  eureka:
+    enabled: false #禁用eureka

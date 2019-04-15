@@ -21,5 +21,12 @@
         </dependency>
         <!-- zuul服务导包结束 -->
 
+        <!-- ribbon依赖开始 -->
+        <!--<dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+        </dependency>-->
+        <!-- ribbon依赖结束 -->
+
     </dependencies>
 </project>
