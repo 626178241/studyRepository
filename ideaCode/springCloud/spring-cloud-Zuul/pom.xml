@@ -69,5 +69,6 @@
 
     <modules>
         <module>zuul-introduction</module>
+        <module>zuul-Filter</module>
     </modules>
 </project>
