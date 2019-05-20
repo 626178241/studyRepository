@@ -2,9 +2,7 @@ package 元注解;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-
-import org.junit.jupiter.api.Test;
-
+import org.junit.Test;
 import 元注解.UserNameAnnotations.MethodEnums;
 
 /**

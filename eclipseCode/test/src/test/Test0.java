@@ -1,18 +1,19 @@
 package test;
 
+import org.junit.Test;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.junit.jupiter.api.Test;
 
 public class Test0 {
 	
 	public static void main(String[] args) {
 		/*Map map = new HashMap();
 		System.out.println(map.get(null));		*/
-		new Test01();
+		new Test0();
 		Long l1 = 127L;
 		Long l2 = 127L;
 		System.out.println(l1==l2);
@@ -47,5 +48,15 @@ public class Test0 {
 		System.out.println(l1.contains(new Long(130)));
 		System.out.println("1".equals(new Long(1).toString()));
 		System.out.println(new Long(150).equals(new Long(150)));
+	}
+
+	@Test
+	public void test04(){
+		Long l = 0L;
+		List list = new ArrayList();
+		list.forEach(o -> {
+
+		});
+		System.out.println(l);
 	}
 }
