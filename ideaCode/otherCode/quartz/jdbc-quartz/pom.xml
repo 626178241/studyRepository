@@ -13,5 +13,12 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>jdbc-quartz</name>
 
+    <dependencies>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.28</version>
+        </dependency>
+    </dependencies>
 
 </project>

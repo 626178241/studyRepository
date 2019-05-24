@@ -1,0 +1,6 @@
+
+#定时任务配置
+quartz:
+  open-cluster: false # 是否开启集群
+  config-location: quartz.properties # 集群配置文件路径
+  data-source: qzDS # 集群数据库,跟quart配置保持一致
