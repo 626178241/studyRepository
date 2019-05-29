@@ -18,7 +18,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/student")
 @Slf4j
-public class StudentController {
+public class StudentController0 {
 
     @RequestMapping("/getStudent")
     public String getStudent(HttpServletRequest request){
