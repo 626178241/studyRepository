@@ -13,5 +13,7 @@
 
     <modules>
         <module>eureka-server</module>
+        <module>ribbon-client</module>
+        <module>test-client</module>
     </modules>
 </project>

@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: security-client
+server:
+  port: 7070
+  servlet:
+    context-path: /client
+
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true # 启用ip配置 这样在注册中心列表中看见的是以ip+端口呈现的
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+

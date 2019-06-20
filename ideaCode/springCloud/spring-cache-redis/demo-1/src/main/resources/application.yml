@@ -5,16 +5,16 @@ spring:
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
   redis:
-    database: 0 # RedisÊý¾Ý¿âË÷Òý£¨Ä¬ÈÏÎª0
-    host: 192.168.59.128 # Redis·þÎñÆ÷µØÖ·
-    port: 6379 # Redis·þÎñÆ÷Á¬½Ó¶Ë¿Ú
-    password: # Redis·þÎñÆ÷Á¬½ÓÃÜÂë£¨Ä¬ÈÏÎª¿Õ£©
+    database: 0 # Redisï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¬ï¿½ï¿½Îª0
+    host: 192.168.59.128 # Redisï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·
+    port: 6379 # Redisï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¶Ë¿ï¿½
+    password: # Redisï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ë£¨Ä¬ï¿½ï¿½Îªï¿½Õ£ï¿½
     jedis:
       pool:
-        max-active: 8 # Á¬½Ó³Ø×î´óÁ¬½ÓÊý£¨Ê¹ÓÃ¸ºÖµ±íÊ¾Ã»ÓÐÏÞÖÆ£©
-        max-wait: -1ms # Á¬½Ó³Ø×î´ó×èÈûµÈ´ýÊ±¼ä£¨Ê¹ÓÃ¸ºÖµ±íÊ¾Ã»ÓÐÏÞÖÆ£©
-        max-idle: 8 # Á¬½Ó³ØÖÐµÄ×î´ó¿ÕÏÐÁ¬½Ó
-        min-idle: 0 # Á¬½Ó³ØÖÐµÄ×îÐ¡¿ÕÏÐÁ¬½Ó
+        max-active: 8 # ï¿½ï¿½ï¿½Ó³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ã¸ï¿½Öµï¿½ï¿½Ê¾Ã»ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½
+        max-wait: -1ms # ï¿½ï¿½ï¿½Ó³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È´ï¿½Ê±ï¿½ä£¨Ê¹ï¿½Ã¸ï¿½Öµï¿½ï¿½Ê¾Ã»ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½
+        max-idle: 8 # ï¿½ï¿½ï¿½Ó³ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        min-idle: 0 # ï¿½ï¿½ï¿½Ó³ï¿½ï¿½Ðµï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     timeout: 5000ms
 mybatis:
   typeAliasesPackage: lb.study.cache.demo1.entity
@@ -22,7 +22,7 @@ mybatis:
   config-location: classpath:mybatis-config.xml
 
 
-# ´òÓ¡sql spring-bootµÄ´òÓ¡sql·½Ê½
+# ï¿½ï¿½Ó¡sql spring-bootï¿½Ä´ï¿½Ó¡sqlï¿½ï¿½Ê½
 #logging:
 #  level:
 #     lb.study.cache.demo1.dao : debug
